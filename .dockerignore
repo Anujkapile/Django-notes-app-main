@@ -1,0 +1,37 @@
+
+cd /home/ubuntu/shellscripting/day3/Django-notes-app-main
+
+cat > .dockerignore <<'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# VCS / tooling
+.git/
+.gitignore
+README.md
+
+# Environment / secrets
+.env
+*.env
+
+# Django artifacts
+static/
+media/
+
+# Node/npm (if any)
+node_modules/
+
+# Docker / Compose
+docker-compose.yml
+compose.yml
+
+# Volumes / runtime data (your offending folder)
+data/
+data/mysql/
+data/mysql/db/
+data/*
+
+# SQLite or local DB files (if any)
+*.db
