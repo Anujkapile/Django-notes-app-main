@@ -1,5 +1,5 @@
 version: "3.8"
-
+#create conatainer 1. nginx 2.django_app 3.db
 services:
   nginx:
     build: ./nginx
